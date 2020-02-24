@@ -1,7 +1,7 @@
 simple-resume-cv
 ================
 
-Template for a simple resume or curriculum vitae (CV), in XeLaTeX, courtesy of @zachscrivena.
+Template for a simple resume or curriculum vitae (CV), in XeLaTeX, courtesy of @zachscrivena
 
 **Compiled sample document:**<br>
 [CV.pdf](https://raw.githubusercontent.com/zachscrivena/simple-resume-cv/master/CV.pdf)
