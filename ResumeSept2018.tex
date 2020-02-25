@@ -51,7 +51,8 @@ breaklinks}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% ACTUAL DOCUMENT.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\usepackage{multicol}
+% Lets me split up Skills in columns to save space.
 \begin{document}
 
 %%%%%%%%%%%%%%%
@@ -64,18 +65,19 @@ breaklinks}
 \href{mailto:Arjun.Singh4@utdallas.edu}
 {Arjun.Singh4@utdallas.edu}
 \,\SubBulletSymbol\,
-+1\,(321)\,507-7158
+(321)\,507-7158
 \,\SubBulletSymbol\,
 \href{\CVWebpage}
 {\url{\CVWebpage}}
-\par
+\,\SubBulletSymbol\,
 %\href{https://www.google.com//place/989+Loop+Road+Southwest,+Richardson,+Texas+75080,+USA}
-{7220 McCallum Boulevard, Apt 2103, Dallas, Texas 75252, USA}
-\par
+%{7220 McCallum Blvd Apt 2103, Dallas, TX 75252}
 %\href{https://www.google.com/maps/place/205+Longleaf+Court,+Orlando,+Florida+32835,+USA}
-{205 Longleaf Court, Orlando, Florida 32835, USA}
+%{205 Longleaf Ct, Orlando Florida 32835}
+Orlando, FL
 \, \SubBulletSymbol\, 
-\href{https://github.com/coolshava}{https://github.com/coolshava}
+Dallas, TX 
+%\SubBulletSymbol \href{https://github.com/coolshava}{https://github.com/coolshava}
 
 \end{SubTitle}
 \begin{Body}
@@ -92,18 +94,19 @@ breaklinks}
 \Entry
 B.S. in
 \href{https://me.utdallas.edu}
-{Mechanical Engineering}
-(and Biomedical Engineering)
+{\textbf{Mechanical Engineering}}
+%(and \href{https://be.utdallas.edu}{Biomedical Engineering})
 \hfill
 Total GPA: 3.18 / 4.00
 %\Gap
 \BulletItem
-\href{https://utdallas.edu}
+%\href{https://utdallas.edu}
 {\textbf{The University of Texas at Dallas}},
 Richardson, Texas, USA
 \hfill
 %\DatestampYMD{2017}{08}{20} --
 \DatestampYMD{2021}{12}{15} 
+\SmallGap
 %\BulletItem
 %Minor in Computer Science
 \begin{Detail}
@@ -310,52 +313,74 @@ Richardson, Texas, USA
 {Skills}
 {Skills}
 {PDF:Skills}
-
-%\Entry
-\BulletItem
-SolidWorks --- Proficient, pending Certified SolidWorks Associate
+%\begin{multicols}{2}
+\Entry
+%\BulletItem
+\textbf{Design}
 \begin{Detail}
 \SubBulletItem
-Can efficiently create parts, assemblies, and drawings. Can create basic toolpaths with HSMWorks. Comparable skill with PTC Creo and Autodesk Inventor
+Proficient in CAD software, including \textbf{SOLIDWORKS}, \textbf{Inventor}, \textbf{PTC Creo}, \textbf{Fusion360} and some \textbf{CATIA}.
+\SubBulletItem 
+Created parts, assemblies, \& drawings compliant with tolerances, \textbf{GD\&T}, and other requirements/standards. 
 \end{Detail}
 %\BulletItem
 %Completed Machine Shop Training Orientation Part 2
-\BulletItem
-Design and Manufacturing
+%\BulletItem
+\textbf{Prototyping/Manufacturing}
 \begin{Detail}
 \SubBulletItem
-Read \& create multiview engineering drawings with tolerances, dimensions, annotations
+\textbf{Machine shop} and \textbf{wood shop} experience. 
 \SubBulletItem
-Some experience with machine shop and wood shop tools.
+Electronics prototyping experience with \textbf{breadboard circuit design}, \textbf{PCB soldering}, and \textbf{Arduino}.
+\SubBulletItem
+Some experience with CAM software including \textbf{HSMWorks} and \textbf{Inventor HSM}, and 3D slicers, such as \textbf{Netfabb}.
+\SubBulletItem
+Acquainted with \textbf{G Code programming} for CNC machines
+%\SubBulletItem 
+%Experience with slicers for 3D printing STL files, including \textbf{Netfabb}.
+
 \end{Detail}
 
-\BulletItem
-AutoCAD, Revit, Autodesk Inventor
+%\BulletItem
+\textbf{Scientific/Programming}
 \begin{Detail}
 \SubBulletItem
-Autodesk Certified User -- 2016
+Familiar with programming and scripting in \textbf{MATLAB}, \textbf{Simulink}, and some \textbf{Python}
+%\SubBulletItem
+%Basic scripting capacities in \textbf{Python}
+\SubBulletItem
+\textbf{C++}: Completed projects with Pointers, Objects, Classes, single/double Linked Lists
+\SubBulletItem
+Can create basic visual programs in \textbf{LabVIEW}
+\SubBulletItem
+Can format {\LaTeX} documents from templates, and create basic documents.
+\SubBulletItem
+Used \textbf{Git} based version control for projects
 \end{Detail}
-\BulletItem
-Microsoft Office 2010
+
+%\BulletItem
+\textbf{Certifications}
 \begin{Detail}
 \SubBulletItem
-MOS Master Level Certification -- May 2013
-\end{Detail}
-\BulletItem
-C++
-\begin{Detail}
+\textbf{Microsoft Office 2010} -- MOS Master Level Certification -- May 2013
 \SubBulletItem
-Projects with Pointers, Objects, and Classes, single/double Linked List classes. 
+\textbf{AutoCAD, Autodesk Inventor, Revit} -- Autodesk Certified User -- 2015
+\SubBulletItem
+Currently pursuing Certified \textbf{SOLIDWORKS} User / Professional, pending Spring 2020
 \end{Detail}
-\BulletItem
-{\LaTeX}, %{\TeX}, {\XeLaTeX},
-PTC Creo, Git, CATIA, Soldering, HSMWorks, Inventor HSM, MATLAB,
+%\BulletItem
+Portfolio with CAD examples and personal project documentation at \href{https://github.com/coolshava}{https://github.com/coolshava} 
+%\BulletItem
+%{\LaTeX}, %{\TeX}, {\XeLaTeX},
+%PTC Creo, Git, CATIA, Soldering, HSMWorks, Inventor HSM, MATLAB,
 %Mathematica,%Maple,%R,%Tableau,%Adobe Photoshop,%Adobe Illustrator,%Microsoft Word,%Microsoft Excel,%Microsoft PowerPoint.
-Arduino, %Rapid Prototyping, Electronics Prototyping
-\begin{Detail}
-\SubBulletItem
-Intermediate skill level, developing proficiency.
-\end{Detail}
+%Arduino, %Rapid Prototyping, Electronics Prototyping
+%\begin{Detail}
+%\SubBulletItem
+%Intermediate skill level, developing proficiency.
+%\end{Detail}
+%\begin{multicols}{2}
+%\end{multicols}
 %%%%%%%%%%%%%%%%%%%%%
 %% WORK EXPERIENCE %%
 %%%%%%%%%%%%%%%%%%%%%
@@ -364,19 +389,15 @@ Intermediate skill level, developing proficiency.
 {Work\newline
 Experience}
 {Work Experience}
-{PDF:WorkExperience}
+{PDF:Work Experience}
 
 \Entry
-\href{https://www.utdallas.edu/machineshop/}
-{\textbf{UT Dallas Machine Shop}},
-Richardson, Texas, USA
-
-\SmallGap
-\BulletItem
-Student Worker/Student Machinist
-%Machinist,
+\textbf{Student Worker/Student Machinist --} \href{https://www.utdallas.edu/machineshop/}
+{\textbf{UTD Machine Shop}},
+Richardson, TX
 \hfill
-\DatestampYMD{2018}{12}{18} -- \DatestampYM{2019}{5}
+\DatestampYMD{2019}{1}{18} -- \DatestampYM{2019}{5}
+\SmallGap
 %\DatestampYMD{2008}{01}{15}
 %\newline
 %Research \& Development Division
@@ -384,7 +405,7 @@ Student Worker/Student Machinist
 \SubBulletItem
 Assisted head machinist to produce machine parts for research projects
 \SubBulletItem
-Operated mills, drill presses, and saws to specified tolerances
+Operated mills, drill presses, saws, and other machine shop tools and precision measurement devices
 \SubBulletItem
 Interpreted engineering drawings to create parts to desired tolerances
 \SubBulletItem
@@ -400,25 +421,46 @@ Learned manufacturing and fabrication processes and application to engineering d
 %%%%%%%%%%%%%%
 
 \Section
-{Projects}
-{Projects}
-{PDF:Projects}
+{Academic Projects}
+{Academic Projects}
+{PDF:Academic Projects}
 
 \Entry
-\textbf{Engineering Projects in Community Service}, EPCS 2100
+\textbf{\href{https://epics.utdallas.edu}{Engineering Projects in Community Service}}, EPCS 2100 - Dr. Terrell Bennett
 \hfill
-\DatestampYM{2019}{01}---\DatestampYM{2019}{05}
+\DatestampYM{2019}{01} -- \DatestampYM{2019}{05}
 \par
-\BulletItem
-Motorized Art Table team member
+%\BulletItem
+%Motorized Art Table team member
 \begin{Detail}
 \SubBulletItem
-Provided solutions to nonprofits. Worked with MyPossibilities on motorized art table for special needs students
+%Provided solutions to nonprofits. 
+Team designed motorized art table for special needs students with nonprofit \href{https://mypossibilities.org}{MyPossibilities} 
 \SubBulletItem
-Replaced and motorized rotation system for art table, optimized translation and control.
+Replaced and motorized rotation system for art table, optimized safety and control.
 \end{Detail}
-
-
+\Entry
+\textbf{Intro to Biomedical Engineering II}, BMEN 1208
+\hfill
+\DatestampYM{2018}{01} -- \DatestampYM{2018}{05}
+\par
+\begin{Detail}
+\SubBulletItem
+Team project: Assembled and drove robot arm with Arduino shield, created custom gripper in CAD to pick and place a ping pong ball in an egg carton. Positional control calculations done in MATLAB.
+\end{Detail}
+\Entry
+\textbf{Intro to Biomedical Engineering I}, BMEN 1100
+\hfill
+\DatestampYM{2017}{08} -- \DatestampYM{2017}{12}
+%\par
+\begin{Detail}
+\SubBulletItem
+Created heartrate detection circuit with photodiode and LED connected to fingertip
+\SubBulletItem
+Signal intercepted from photodiode was filtered through op-amp and displayed on oscilloscope
+\SubBulletItem
+Wooden finger clip and acrylic breadboard enclosure fabricated at wood shop.
+\end{Detail}
 % Manual page break.
 %\newpage
 
@@ -427,89 +469,100 @@ Replaced and motorized rotation system for art table, optimized translation and 
 %%%%%%%%%%%%%%%%%%%%%%%
 
 \Section
-{Campus Activities}
-{Campus Activities}
-{PDF:CampusActivities}
-\Entry
-\href{https://www.facebook.com/groups/UTDASME/}
-{\textbf{American Society of Mechanical Engineers}},
-%\newline
-University of Texas at Dallas
-\hfill
-\DatestampY{2018} --
-Present
-\SmallGap
-\BulletItem
-Member 
-\begin{Detail}
-\SubBulletItem
-Temporary assignment in Shell Eco Car Competition on Body and Fuel team (Roll Bar project)
-\end{Detail}
+{Activities \newline 
+\& Awards}
+{Activities and Awards}
+{PDF:Activities and Awards}
 \Entry
 %\href{http://www.example.com/my-club}
 %{\textbf{First Volunteers Club}},
 %First American University
-\textbf{Mantra Lounge},
+\textbf{Coordinator/Officer/Content Director --} \textbf{\href{https://www.facebook.com/mantraloungeUTD/}{Mantra Lounge}},
 UT Dallas
 \hfill
 \DatestampYMD{2018}{01}{15} --
 Present%\DatestampYMD{2007}{08}{15}
-\SmallGap
-\BulletItem
-Coordinator/Officer
+%\SmallGap
 \begin{Detail}
 \SubBulletItem
-Organized weekly meditation meetings, as well as outreach programs and guest speakers.
+Organized/led weekly meditation meetings, gave philosophical presentations, and arranged guest speakers.
 \SubBulletItem
-Led meditation sessions and philosophical presentations and utilized public speaking and leadership skills, increasing attendance by approximately 125\% over two semesters
+Utilized public speaking and leadership skills, increasing attendance by about 125\% over two semesters
 \SubBulletItem
-Consultant and public speaker in Fall 2019, overseeing program growth of over 300\%.
+Content director/consultant \& recurring public speaker from Fall 2019, overseeing rapid growth of over 300\%.
+\SubBulletItem
+Skills developed: Event facilitation, public speaking, presentation preparation, content research / development
 \end{Detail}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% AWARDS & SCHOLARSHIPS %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\Section
-{Awards \&\newline
-Scholarships}
-{Awards \& Scholarships}
-{PDF:AwardsAndScholarships}
+%\Section
+%{Awards \&\newline
+%Scholarships}
+%{Extra
+%\newline curriculars}
+%{Extracurriculars}
+%{Awards \& Scholarships}
+%{PDF:AwardsAndScholarships}
+%{PDF:Extracurriculars}
+\iffalse
+    \BulletItem
+    National Merit Scholar at the University of Texas at Dallas
+    \hfill
+    \DatestampYMD{2017}{05}{10} -- Present
+    \begin{Detail}
+    \Item
+    Full-tuition scholarship with additional stipend %for undergraduate study abroad.
+    \end{Detail}
 
-\BulletItem
-National Merit Scholar at the University of Texas at Dallas
+    %\Gap   
+    \BulletItem 
+    \href{https://www.utdallas.edu/news/2018/2/8-32826_More-than-1500-Students-Earn-Spots-on-Fall-Deans-    L_story-wide.html}
+    {Dean's List,
+    %Fall 2002 through Spring 2005,
+    Fall 2017,
+    University of Texas at Dallas}
+    \hfill
+    %\DatestampY{2002} --
+    \DatestampYMD{2017}{12}{31}
+    \begin{Detail}
+    \Item
+    For attaining a semester GPA of 4.00, within the top 10\% of the School of Engineering.
+    \end{Detail}
+\fi
+%\Gap
+\Entry
+\textbf{Member --}
+\href{https://www.facebook.com/groups/UTDASME/}
+{\textbf{American Society of Mechanical Engineers}},
+%\newline
+UT Dallas
 \hfill
-\DatestampYMD{2017}{05}{10} -- Present
+\DatestampY{2018} --
+Present
+
 \begin{Detail}
-\Item
-Full-tuition scholarship with additional stipend %for undergraduate study abroad.
+%\SubBulletItem
+%Temporary assignment in Shell Eco Car Competition on Body and Fuel team (Roll Bar project)
+\SubBulletItem
+Skills developed: Networking with professionals, soliciting career feedback and advice from mentors, improving technical familiarity through workshops and Roll Bar project.
 \end{Detail}
 
-%\Gap
-\BulletItem
-\href{https://www.utdallas.edu/news/2018/2/8-32826_More-than-1500-Students-Earn-Spots-on-Fall-Deans-L_story-wide.html}
-{Dean's List,
-%Fall 2002 through Spring 2005,
-Fall 2017,
-University of Texas at Dallas}
+\Entry
+\href{https://www.naqt.com/stats/player/index.jsp?contact_id=383633}{\textbf{Distinguished Quiz Bowl Team Member}}, Valencia College
 \hfill
-%\DatestampY{2002} --
-\DatestampYMD{2017}{12}{31}
-\begin{Detail}
-\Item
-For attaining a semester GPA of 4.00, within the top 10\% of the School of Engineering.
-\end{Detail}
-
-%\Gap
+\DatestampYM{2016}{08} -- \DatestampYM{2017}{5}
 \BulletItem
 \href{https://www.naqt.com/stats/tournament/standings.jsp?tournament_id=7594}
 {2017 FCSAA Brain Bowl State Championship,
-Valencia College}
+Valencia College A}
 \hfill
 \DatestampYMD{2017}{04}{01}
 \begin{Detail}
 \Item
-\#1 scorer, as well as member of winning team in Florida's Community College Quiz Championship.
+\#1 individual scorer \& \#1 team in Florida's Community College Quiz Championship.
 \end{Detail}
 
 %\Gap
@@ -524,21 +577,36 @@ Valencia College B}
 \Item
 Member of community college quiz bowl team nationally ranked at championship.
 \end{Detail}
-
-%\Gap
-
 \BulletItem
-\href{https://valenciacollege.edu/students/deanslist/fall2016.cfm}
-	{President's List,
-Fall 2016,
-Valencia College}
-\hfill
-Fall \DatestampY{2016} %--
-%\DatestampY{2017}
+Skills developed: Fast and effective team communication, planning and strategizing given individual strengths, acquiring information rapidly 
+\Entry
+%Academic and Music Tutoring and Volunteering
+%\BulletItem
+%Skills: Communication Skills, pedagogical techniques, community building
+\Entry
+\textbf{Boy's Summer Trip / Youth Bus Tour}, ISKCON Youth Ministry
+\hfill \DatestampY{2014} -- Present
 \begin{Detail}
-\Item
-For attaining a semester GPA of 4.00 with 6 or more credit hours while dual-enrolled in high school.
+\SubBulletItem
+Mentoring, team coordination, cultural communication \& exchange, stage presentation, public speaking
 \end{Detail}
+
+\end{Body}
+%\Gap
+\iffalse
+    \BulletItem
+    \href{https://valenciacollege.edu/students/deanslist/fall2016.cfm}
+	{President's List,
+    Fall 2016,
+    Valencia College}
+    \hfill
+    Fall \DatestampY{2016} %--
+    %\DatestampY{2017}
+    \begin{Detail}
+    \Item
+    For attaining a semester GPA of 4.00 with 6 or more credit hours while dual-enrolled in high school.
+    \end{Detail}
+\fi
 %%%%%%%%%%%%%%%
 %% LANGUAGES %%
 %%%%%%%%%%%%%%%
@@ -626,7 +694,7 @@ For attaining a semester GPA of 4.00 with 6 or more credit hours while dual-enro
 
 \iffalse
 	\Section
-	{Mu	ltilingual Unicode Examples}
+	{Multilingual Unicode Examples}
 	{Multilingual Unicode Examples}
 	{PDF:MultilingualUnicodeExamples}
 	
@@ -658,7 +726,7 @@ For attaining a semester GPA of 4.00 with 6 or more credit hours while dual-enro
 	\end{Detail}
 	
 	% Manual page break.
-	\newpage
+%	\newpage
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%% THIS IS A SECTION WITH USAGE NOTES %%
@@ -818,7 +886,7 @@ For attaining a semester GPA of 4.00 with 6 or more credit hours while dual-enro
 
 	\endgroup
 \fi
-\end{Body}
+%\end{Body}
 
 %%%%%%%%%%%
 % CV NOTE %
