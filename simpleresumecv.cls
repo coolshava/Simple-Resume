@@ -75,7 +75,7 @@
 left=0.20in,
 right=0.20in,
 top=0.20in,
-bottom=0.20in,
+bottom=0.10in,%previously 0.2 or 0.3
 nohead,
 includefoot
 ]{geometry}
@@ -173,7 +173,7 @@ BoldItalicFont=FreeSerifBoldItalic]
 \newcommand{\UseHeadingFont}{\normalfont}
 \newcommand{\UseHeaderFooterFont}{\UseHeadingFont\fontsize{10pt}{9.5pt}\selectfont}
 \newcommand{\UseNoteFont}{\UseHeadingFont\fontsize{8pt}{9.6pt}\selectfont}
-\newcommand{\UseTitleFont}{\UseHeadingFont\fontsize{28pt}{33.6pt}\selectfont\bfseries}
+\newcommand{\UseTitleFont}{\UseHeadingFont\fontsize{24pt}{33.6pt}\selectfont\bfseries}%prev 28pt, 33.6pt
 \newcommand{\UseSubTitleFont}{\normalfont\fontsize{10pt}{10.3pt}\selectfont}
 \newcommand{\UseSectionFont}{\UseHeadingFont\fontsize{12pt}{14pt}\selectfont\bfseries}
 \newcommand{\UseSubSectionFont}{\UseHeadingFont\fontsize{10pt}{10.3pt}\selectfont\bfseries}
@@ -231,7 +231,7 @@ BoldItalicFont=FreeSerifBoldItalic]
 
 % Macro: SubTitle (personal information below name).
 \newenvironment{SubTitle}
-{\par\vspace{0.25\baselineskip}%
+{\par\vspace{0.15\baselineskip}%previously 0.25
 \begingroup\centering%
 \UseSubTitleFont}
 {\par\endgroup\par}
@@ -239,7 +239,7 @@ BoldItalicFont=FreeSerifBoldItalic]
 % Macro: Body (rest of the document).
 \newenvironment{Body}
 {%
-\par\vspace{0.75\baselineskip}%
+\par\vspace{0.25\baselineskip}%previously 0.75
 \begin{list}
 {}
 {\setlength\leftmargin{1.2in}%
@@ -251,7 +251,7 @@ BoldItalicFont=FreeSerifBoldItalic]
 \setlength\parskip{0in}%
 \setlength\topsep{0in}%
 \setlength\parsep{0in}%
-\setlength\itemsep{0.46\baselineskip}%
+\setlength\itemsep{0.15\baselineskip}%previously 0.46
 \setlength\partopsep{0in}%
 %\raggedright%
 }%
@@ -271,7 +271,7 @@ BoldItalicFont=FreeSerifBoldItalic]
 \newcommand{\Section}[3]
 {\par\pdfbookmark[2]{#2}{#3}%
 \item[\smash{\parbox[t]{1.2in}{\UseSectionFont\RaggedRight\MakeUppercase{#1}}}]%
-\par}
+}\par}
 
 % Macro: SubSection.
 \newcommand{\SubSection}[3]
